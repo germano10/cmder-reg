@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+
+; Open files
+[HKEY_CLASSES_ROOT\*\shell\CMDer]
+@="CMDer"
+"Icon"="C:\\cmder\\Cmder.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\CMDer\command]
+@="\"C:\\cmder\\Cmder.exe\" \"%1\""
+
+; Right click ON a folder
+[HKEY_CLASSES_ROOT\Directory\shell\Abrir Pasta com CMDer]
+@="Abrir Pasta com CMDer"
+"Icon"="\"C:\\cmder\\Cmder.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\shell\Abrir Pasta com CMDer\command]
+@="\"C:\\cmder\\Cmder.exe\" \"%1\""
+
+; Right click INSIDE a folder
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Abrir Pasta com CMDer]
+@="Abrir Pasta com CMDer"
+"Icon"="\"C:\\cmder\\Cmder.exe\",0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Abrir Pasta com CMDer\command]
+@="\"C:\\cmder\\Cmder.exe\" \"%V\""
+
+
